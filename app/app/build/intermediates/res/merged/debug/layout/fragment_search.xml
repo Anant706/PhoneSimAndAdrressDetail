@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/myAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        android:layout_marginBottom="6dp"
+        ads:adUnitId="@string/banner_ad_unit_id" >
+    </com.google.android.gms.ads.AdView>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/myAdView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/View01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/country_text"
+                    android:layout_marginTop="15dp"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:id="@+id/country_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/country_code1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="22dp"
+                    android:text="Select Country Code"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/MyTitleHead" />
+
+                <Spinner
+                    android:id="@+id/country_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/View01"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/View02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/country_code"
+                    android:background="#D9D9D9" />
+
+                <EditText
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@+id/View02"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter number to search"
+                    android:inputType="number"
+                    android:background="@color/white"
+
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15.0sp" />
+
+                <Button
+                    android:id="@+id/find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:layout_below="@+id/mobile_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42.0dip"
+                    android:height="30.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:text="         Search         "
+                    android:background="@color/white"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout1"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rounded_corner_map"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewCallScreen"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@drawable/phone2" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RelativeLayout1"
+                    android:layout_toRightOf="@+id/imageViewCallScreen">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.95"
+                            android:gravity="center_vertical|left"
+                            android:text="Unknow Number"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/operator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="0.95"
+                            android:gravity="center_vertical|left"
+                            android:text="Sorry! Unknown Operator"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewCallScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.95"
+                            android:ellipsize="marquee"
+                            android:gravity="center_vertical|left"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Close"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
