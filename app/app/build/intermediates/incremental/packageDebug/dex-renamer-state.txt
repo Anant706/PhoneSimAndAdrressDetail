@@ -1,7 +1,0 @@
-#Sun Jan 13 13:17:57 CST 2019
-base.0=C\:\\Users\\infin\\Documents\\GitHub\\android-app\\app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9af28cd9880c985f60fd49b4eb134577d96cb99c
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\infin\\Documents\\GitHub\\android-app\\app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1c254390a5d75a374c6f7cc01c04fae2cb4b2e9a\\classes.dex
-base.1=C\:\\Users\\infin\\Documents\\GitHub\\android-app\\app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1c254390a5d75a374c6f7cc01c04fae2cb4b2e9a
-file.0=C\:\\Users\\infin\\Documents\\GitHub\\android-app\\app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9af28cd9880c985f60fd49b4eb134577d96cb99c\\classes.dex
