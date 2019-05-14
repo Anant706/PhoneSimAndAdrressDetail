@@ -111,7 +111,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAobwt7Y7zlWZRAY2BDfa0evq_MXNo1Sok" />
+            android:value="" />
 
         <!-- Include the AdActivity configChanges and theme. -->
         <activity
